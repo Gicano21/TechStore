@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Download TechStore App</title>
+    <style>
+        /* Tailwind-inspired base styles derived from About.tsx */
+        body {
+            font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #ffffff;
+        }
+        
+        .container {
+            text-align: center;
+            /* Matches the 'bg-gradient-to-r from-blue-600 to-purple-600' class */
+            background: linear-gradient(to right, #2563eb, #9333ea);
+            color: white;
+            padding: 3rem;
+            /* Matches the 'rounded-2xl' class */
+            border-radius: 1rem; 
+            /* Soft shadow for depth */
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+            width: 90%;
+            max-width: 500px;
+        }
+
+        h1 {
+            /* Matches 'text-3xl md:text-4xl lg:text-5xl font-bold' */
+            font-size: 2.25rem; 
+            font-weight: 700; 
+            margin-top: 0;
+            margin-bottom: 1rem;
+            line-height: 1.2;
+        }
+
+        p {
+            /* Matches 'text-lg md:text-xl lg:text-2xl leading-relaxed' */
+            font-size: 1.125rem; 
+            margin-top: 0;
+            margin-bottom: 2rem;
+            line-height: 1.625;
+            color: rgba(255, 255, 255, 0.9);
+        }
+
+        .download-btn {
+            display: inline-block;
+            background-color: white;
+            /* Matching the blue-600 color for contrast */
+            color: #2563eb; 
+            padding: 1rem 2.5rem;
+            font-size: 1.125rem;
+            font-weight: 700;
+            text-decoration: none;
+            /* Full rounded pill shape */
+            border-radius: 9999px; 
+            transition: all 0.2s ease-in-out;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+        }
+
+        .download-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        }
+
+        .download-btn:active {
+            transform: translateY(0);
+        }
+
+        .footer {
+            margin-top: 2.5rem;
+            font-size: 0.875rem;
+            color: rgba(255, 255, 255, 0.8);
+        }
+
+        .signature {
+            /* Matches 'block mt-2 font-semibold' from the History section */
+            display: block;
+            margin-top: 0.5rem;
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>TechStore App</h1>
+        <p>Tap the button below to install the app directly onto your device.</p>
+
+        <a href="TechStore.apk" 
+           class="download-btn" 
+           download="TechStore.apk">
+           📥 Download TechStore
+        </a>
+
+        <div class="footer">
+            Exhibition 2026 • Project Showcase
+            <span class="signature">- GGKVO 2026.</span>
+        </div>
+    </div>
+
+</body>
+</html>
